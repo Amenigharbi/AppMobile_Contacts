@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFF5E1"
+    tools:context=".Ajout">
+
+    <!-- Image d'en-tête -->
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/image"
+        android:scaleType="centerCrop"
+        android:contentDescription="En-tête" />
+
+    <!-- Titre avec style amélioré -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Ajouter un Utilisateur"
+        android:textColor="#FF4081"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center" />
+
+    <!-- Champ Nom avec CardView et bordures arrondies -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp">
+
+        <EditText
+            android:id="@+id/NomAj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Champ Prénom avec CardView et bordures arrondies -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp">
+
+        <EditText
+            android:id="@+id/PrenomAj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prénom"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Champ Mot de passe avec CardView et bordures arrondies -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp">
+    <EditText
+        android:id="@+id/PassAj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telephone"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:ems="10"
+        android:inputType="phone" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"/>
+
+    <!-- Bouton Ajout avec dégradé -->
+    <Button
+        android:id="@+id/ajt_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/gradient_button"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:elevation="8dp" />
+
+    <!-- Bouton Quitter avec dégradé -->
+    <Button
+        android:id="@+id/qte_ajt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quitter"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/gradient_button_exit"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:elevation="8dp" />
+
+</LinearLayout>

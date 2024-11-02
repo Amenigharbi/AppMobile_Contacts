@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contact_background"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:backgroundTintMode="add"
+    android:backgroundTint="@color/white">
+
+    <!-- Rounded Profile Image Section -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="Profile Image"
+        android:src="@drawable/baseline_account_circle_24"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_image_background" />
+
+    <!-- Contact Details Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <!-- Contact Name -->
+        <TextView
+            android:id="@+id/tvnom_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gharbi"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <!-- Pseudo (Username) -->
+        <TextView
+            android:id="@+id/tvpseudo_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ameni"
+            android:textSize="14sp"
+            android:textColor="#757575" />
+
+        <!-- Contact Number -->
+        <TextView
+            android:id="@+id/tvnum_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+21627478047"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+        <!-- Divider Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#E0E0E0" />
+
+        <!-- Action Buttons (Call, Delete, Edit) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Call Icon with Ripple Effect -->
+            <ImageView
+                android:id="@+id/imageView_call"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Call Contact"
+                android:src="@drawable/baseline_call_24"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+            <!-- Delete Icon with Ripple Effect -->
+            <ImageView
+                android:id="@+id/imageView_del"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Delete Contact"
+                android:src="@drawable/baseline_delete_24"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+            <!-- Edit Icon with Ripple Effect -->
+            <ImageView
+                android:id="@+id/imageView_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Edit Contact"
+                android:src="@drawable/baseline_edit_24"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
